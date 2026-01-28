@@ -74,18 +74,18 @@ ASSIGNMENT3_BACKEND
 - After login or registration, a token is returned
 - Token must be sent in request headers:
 
-  Objects
-Primary Object
+  ## Objects
+## Primary Object
 
 Product: name, price, category
 
-Secondary Object
+## Secondary Object
 
 Review: productId, text, rating
 
 Each object supports full CRUD operations.
 
-Authentication & Security
+## Authentication & Security
 
 Users can register and login
 
@@ -95,7 +95,7 @@ Authentication is handled using JWT
 
 Tokens are required for protected routes
 
-Role-Based Access Control (RBAC)
+## Role-Based Access Control (RBAC)
 
 Public Access:
 
@@ -109,7 +109,7 @@ POST / PUT / DELETE products
 
 POST / PUT / DELETE reviews
 
-API Features
+## API Features
 
 User registration & login
 
@@ -119,23 +119,20 @@ Admin-only access for modifying data
 
 CRUD operations for Products and Reviews
 
-How to Run
+## How to Run
 
-Install dependencies
+1.Install dependencies
 
 npm install
 
 
-Start MongoDB
+2.Start MongoDB
 
-Run the server
-
+3.Run the server
 node server.js
+4.Open the frontend in the browser
 
-
-Open the frontend in the browser
-
-Testing
+## Testing
 
 Tested using Postman
 
@@ -145,7 +142,7 @@ User vs Admin roles
 
 Authorized vs Unauthorized access
 
-Conclusion
+## Conclusion
 
 This project demonstrates a secure, scalable backend system using industry best practices, including MVC architecture, JWT authentication, password hashing, and role-based authorization.
 
