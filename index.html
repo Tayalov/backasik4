@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products & Reviews</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Users</h1>
+
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="text" id="regName" placeholder="Name" required>
+    <input type="email" id="regEmail" placeholder="Email" required>
+    <input type="password" id="regPassword" placeholder="Password" required>
+    <select id="regRole">
+      <option value="user">Client</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+
+  <h2>Login</h2>
+  <form id="loginForm">
+    <input type="email" id="loginEmail" placeholder="Email" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <h1>Products</h1>
+  <ul id="products"></ul>
+
+  <h2>Add Product</h2>
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <button type="submit">Add Product</button>
+  </form>
+
+  <h1>Reviews</h1>
+  <ul id="reviews"></ul>
+
+  <h2>Add Review</h2>
+  <form id="reviewForm">
+    <select id="productSelect" required>
+      <option value="">Select Product</option>
+    </select>
+    <input type="text" id="text" placeholder="Review Text" required>
+    <input type="number" id="rating" placeholder="Rating" min="1" max="5" required>
+    <button type="submit">Add Review</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
